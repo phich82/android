@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtFullNameStudent"
+        android:textStyle="bold"
+        android:textColor="#152BB3"
+        android:textSize="24sp"
+        android:text="Full Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtBirthYearStudent"
+        android:textStyle="bold"
+        android:textColor="#FAB412"
+        android:textSize="20sp"
+        android:text="Birth Date: 1999"
+        android:layout_below="@+id/txtFullNameStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtAddressStudent"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="#6B6A68"
+        android:textSize="20sp"
+        android:text="Cà Mau"
+        android:layout_below="@+id/txtFullNameStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/imgEditStudent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/imgDeleteStudent"
+        android:layout_toLeftOf="@id/imgEditStudent"
+        android:src="@drawable/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</RelativeLayout>

@@ -267,7 +267,10 @@ public class DatabaseActivity extends AppCompatActivity {
             if (imageStorages == null) {
                 imageStorages = new ArrayList<>();
             }
+
+            // Clear old data
             imageStorages.clear();
+
             Cursor cursor = db.select("SELECT * FROM image_storage");
             while (cursor.moveToNext()) {
                 int id = cursor.getInt(0);
@@ -286,6 +289,10 @@ public class DatabaseActivity extends AppCompatActivity {
         if (workings == null) {
             workings = new ArrayList<>();
         }
+
+        // Clear old data
+        workings.clear();
+
         Cursor cursor = db.select("SELECT * FROM working");
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);

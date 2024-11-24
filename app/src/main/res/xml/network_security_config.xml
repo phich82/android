@@ -3,6 +3,9 @@
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">192.168.1.111</domain>
         <domain includeSubdomains="true">172.16.1.193</domain>
+        <domain includeSubdomains="true">192.168.110.172</domain>
+        <domain includeSubdomains="true">172.16.163.179</domain>
+        <domain includeSubdomains="true">192.168.1.27</domain>
     </domain-config>
 </network-security-config>
 <!-- java.io.IOException: Cleartext HTTP traffic to 172.16.1.193 not permitted -->

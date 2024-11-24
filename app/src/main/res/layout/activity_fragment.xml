@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentActivity">
+
+    <TextView
+        android:id="@+id/lblFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Example Fragment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewA"
+        android:name="com.java.sample.fragment.FragmentA"
+        android:layout_width="328dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewB"
+        android:name="com.java.sample.fragment.FragmentB"
+        android:layout_width="328dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnShowFragmentA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:onClick="showFragment"
+        android:text="Show Fragment A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFragment" />
+
+    <Button
+        android:id="@+id/btnShowFragmentB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="showFragment"
+        android:text="Show Fragment B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFragment" />
+
+    <Button
+        android:id="@+id/btnChangeTitleFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Change Title In Fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFragment" />
+
+    <FrameLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_width="329dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeTitleFragment" />
+
+    <Button
+        android:onClick="addFragA"
+        android:id="@+id/fragmentA"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="addFragB"
+        android:id="@+id/fragmentB"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:text="B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="addFragC"
+        android:id="@+id/fragmentC"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:text="C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="addFragD"
+        android:id="@+id/fragmentD"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="12dp"
+        android:text="D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="addFragE"
+        android:id="@+id/fragmentE"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="12dp"
+        android:text="E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="addFragF"
+        android:id="@+id/fragmentF"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="12dp"
+        android:text="F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="addFragG"
+        android:id="@+id/fragmentG"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="12dp"
+        android:text="G"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:id="@+id/fragmentBack"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="12dp"
+        android:onClick="backFrag"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragA"
+        android:id="@+id/fragmentRA"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:text="RA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragB"
+        android:id="@+id/fragmentRB"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:text="RB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragC"
+        android:id="@+id/fragmentRC"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="48dp"
+        android:text="RC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragD"
+        android:id="@+id/fragmentRD"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="48dp"
+        android:text="RD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragE"
+        android:id="@+id/fragmentRE"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="48dp"
+        android:text="RE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragF"
+        android:id="@+id/fragmentRF"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="48dp"
+        android:text="RF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:onClick="removeFragG"
+        android:id="@+id/fragmentRG"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="48dp"
+        android:text="RG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <Button
+        android:id="@+id/fragmentPop"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginTop="48dp"
+        android:onClick="popFrag"
+        android:text="Pop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentLayout" />
+
+    <FrameLayout
+        android:id="@+id/fragmentLayoutAddRemove"
+        android:layout_width="304dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerViewA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentRD"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnFragDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="Frag Dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

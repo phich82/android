@@ -22,7 +22,6 @@ import android.widget.Toast;
 
 import com.java.sample.DatabaseActivity;
 import com.java.sample.R;
-import com.java.sample.Util;
 import com.java.sample.db.DB;
 
 import java.io.ByteArrayOutputStream;

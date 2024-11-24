@@ -9,18 +9,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.java.sample.R;
-import com.java.sample.WebserviceActivity;
 import com.java.sample.dto.Student;
 
 import java.util.List;
 
-public class StudentAdapter extends BaseAdapter {
+public class FragmentStudentAdapter extends BaseAdapter {
 
-    private WebserviceActivity context;
+    private Context context;
     private int layout;
     private List<Student> students;
 
-    public StudentAdapter(WebserviceActivity context, int layout, List<Student> students) {
+    public FragmentStudentAdapter(Context context, int layout, List<Student> students) {
         this.context = context;
         this.layout = layout;
         this.students = students;
@@ -70,11 +69,11 @@ public class StudentAdapter extends BaseAdapter {
 
             // Edit button
             holder.imgEdit.setOnClickListener(v -> {
-                context.onEditStudent(student);
+                //context.onEditStudent(student);
             });
             // Delete button
             holder.imgDelete.setOnClickListener(v -> {
-                context.onDeleteStudent(student);
+                //context.onDeleteStudent(student);
             });
         }
 

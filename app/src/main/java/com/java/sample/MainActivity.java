@@ -36,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
             buttonAsyncTask,
             buttonShowImage,
             buttonDB,
-            buttonGoWebservice;
+            buttonGoWebservice,
+            btnGoFragmentScreen,
+            btnGoFragmentListScreen;
     ImageView imageBrowser, imageMessage, imagePhone, imageCamera, imageViewCamera, imageViewLoadImage;
     TextView textViewReturnName, textViewBackGround, textViewAsyncTask;
     EditText editTextImageUrl;
@@ -77,6 +79,12 @@ public class MainActivity extends AppCompatActivity {
         buttonGoAnimation = findViewById(R.id.buttonGoAnimation);
         buttonRunBackGround = findViewById(R.id.buttonRunBackGround);
 
+        // Fragment
+        btnGoFragmentListScreen = findViewById(R.id.btnGoFragmentListScreen);
+
+        // Fragment
+        btnGoFragmentScreen = findViewById(R.id.btnGoFragmentScreen);
+
         // Webservice
         buttonGoWebservice = findViewById(R.id.btnGoWebservice);
 
@@ -91,6 +99,16 @@ public class MainActivity extends AppCompatActivity {
         editTextImageUrl = findViewById(R.id.editTextImageUrl);
         imageViewLoadImage = findViewById(R.id.imageViewLoadImage);
         buttonShowImage = findViewById(R.id.buttonShowImage);
+
+        // TODO: Go Fragment List
+        btnGoFragmentListScreen.setOnClickListener(view -> {
+            startActivity(new Intent(this, FragmentListActivity.class));
+        });
+
+        // TODO: Go Fragment
+        btnGoFragmentScreen.setOnClickListener(view -> {
+            startActivity(new Intent(this, FragmentActivity.class));
+        });
 
         // TODO: Go webservice
         buttonGoWebservice.setOnClickListener(view -> {

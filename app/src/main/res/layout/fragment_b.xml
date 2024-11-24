@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblTitleFragmentB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fagment B"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNameFragmentB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnClickMeFragmentB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Me!" />
+
+</LinearLayout>

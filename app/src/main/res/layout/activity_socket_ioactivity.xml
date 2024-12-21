@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".SocketIOActivity">
+
+    <!-- User list -->
+    <ListView
+        android:id="@+id/listViewUser"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Chat history"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <!-- Chat message list -->
+    <ListView
+        android:id="@+id/listViewChat"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <!-- Send, AddUser buttons-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10">
+        <EditText
+            android:layout_marginLeft="10sp"
+            android:hint="Enter message..."
+            android:id="@+id/txtMessageChat"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnAddUserChat"
+            android:background="@null"
+            android:layout_weight="1"
+            android:src="@drawable/add_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnSendMessageChat"
+            android:background="@null"
+            android:layout_weight="1"
+            android:src="@drawable/send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

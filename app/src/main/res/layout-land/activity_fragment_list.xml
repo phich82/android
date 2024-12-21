@@ -3,11 +3,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:weightSum="10"
+    android:orientation="horizontal">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+        android:id="@+id/fcvStudentList"
         android:name="com.java.sample.fragment.StudentFragmentList"
-        android:layout_width="match_parent"
-        android:layout_height="315dp" />
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcvStudentInfo"
+        android:name="com.java.sample.fragment.StudentFragmentInfo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6" />
 </LinearLayout>

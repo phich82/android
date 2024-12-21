@@ -13,8 +13,6 @@ import java.io.Serializable;
 
 //@JsonNaming(SnakeCaseStrategy.class)
 public class Student implements Serializable {
-    @Serial
-    private static final Long serialVersionUID = 1L;
 
     //@JsonProperty("id")
     private Integer id;

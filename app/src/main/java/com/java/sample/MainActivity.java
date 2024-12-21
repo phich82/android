@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -38,13 +37,18 @@ public class MainActivity extends AppCompatActivity {
             buttonDB,
             buttonGoWebservice,
             btnGoFragmentScreen,
-            btnGoFragmentListScreen;
+            btnGoFragmentListScreen,
+            btnGoChat,
+            btnGoYoutube,
+            btnGoGoogleMap,
+            btnGoAdMob;
     ImageView imageBrowser, imageMessage, imagePhone, imageCamera, imageViewCamera, imageViewLoadImage;
     TextView textViewReturnName, textViewBackGround, textViewAsyncTask;
     EditText editTextImageUrl;
 
     private static final int REQUEST_CODE_SAVE = 123;
     private static final int REQUEST_CODE_CAMERA_PICTURE = 124;
+
 
     Handler handler = new Handler() {
         @Override
@@ -99,6 +103,38 @@ public class MainActivity extends AppCompatActivity {
         editTextImageUrl = findViewById(R.id.editTextImageUrl);
         imageViewLoadImage = findViewById(R.id.imageViewLoadImage);
         buttonShowImage = findViewById(R.id.buttonShowImage);
+
+        // Go AdMob
+        btnGoAdMob = findViewById(R.id.btnGoAdMob);
+
+        // Go GoogleMap
+        btnGoGoogleMap = findViewById(R.id.btnGoGoogleMap);
+
+        // Go Youtube
+        btnGoYoutube = findViewById(R.id.btnGoYoutube);
+
+        // Go Chat
+        btnGoChat = findViewById(R.id.btnGoChat);
+
+        // TODO: Go AdMob
+        btnGoAdMob.setOnClickListener(view -> {
+            startActivity(new Intent(this, AdMobActivity.class));
+        });
+
+        // TODO: Go GoogleMap
+        btnGoGoogleMap.setOnClickListener(view -> {
+            startActivity(new Intent(this, GoogleMapActivity.class));
+        });
+
+        // TODO: Go Youtube
+        btnGoYoutube.setOnClickListener(view -> {
+            startActivity(new Intent(this, PlayVideoActivity.class));
+        });
+
+        // TODO: Go Chat
+        btnGoChat.setOnClickListener(view -> {
+            startActivity(new Intent(this, SocketIOActivity.class));
+        });
 
         // TODO: Go Fragment List
         btnGoFragmentListScreen.setOnClickListener(view -> {

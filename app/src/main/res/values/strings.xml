@@ -1,5 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- List devices: adb devices -->
+<!-- Install apk: adb -s RF8T908FA3F install ./app-release.apk -->
+
 <resources>
-    <string name="app_name">Sample Application</string>
+    <!-- App name shown in device -->
+    <string name="app_name">Demo App</string>
+
     <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -60,4 +67,13 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Google Map -->
+    <string name="map_api_key">AIzaSyAe8rMUSfqcr3AhAtDoqInCmlU0JFacgG4</string>
+    <!-- AdMod Map -->
+    <string name="banner_ad_app_id">ca-app-pub-6593105905992807~8594545620</string>
+<!--    <string name="banner_ad_unit_id">ca-app-pub-6593105905992807/2874442944</string>-->
+    <!-- Banner for Ad Test (Nice Job!) -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>

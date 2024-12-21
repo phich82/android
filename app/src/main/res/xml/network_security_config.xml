@@ -6,6 +6,11 @@
         <domain includeSubdomains="true">192.168.110.172</domain>
         <domain includeSubdomains="true">172.16.163.179</domain>
         <domain includeSubdomains="true">192.168.1.27</domain>
+        <domain includeSubdomains="true">192.168.1.33</domain>
+        <domain includeSubdomains="true">172.16.3.49</domain>
+        <domain includeSubdomains="true">192.168.1.106</domain>
+        <domain includeSubdomains="true">192.168.1.102</domain>
+        <domain includeSubdomains="true">192.168.1.222</domain>
     </domain-config>
 </network-security-config>
 <!-- java.io.IOException: Cleartext HTTP traffic to 172.16.1.193 not permitted -->

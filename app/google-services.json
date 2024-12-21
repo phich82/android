@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90015716474",
+    "project_id": "quangcao-578e8",
+    "storage_bucket": "quangcao-578e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90015716474:android:6c560211cd464438ab57c3",
+        "android_client_info": {
+          "package_name": "com.java.sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDM_dVAM96fZbzFExupgmcyN5byzCQSrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
